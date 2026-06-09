@@ -51,7 +51,7 @@ class User:
     def check_plan (self):
         print (f"User {self.username} sedang berlangganan")
 
-        if (self.current_plan in self.header_benefit [0:4]):
+        if (self.current_plan in self.header_benefit [0:3]):
             if self.current_plan == "Basic Plan":
                 table_data = [[row[0], row[-1]] for row in self.table_benefit]
                 header = [self.header_benefit[0], self.header_benefit[-1]]
